@@ -1,7 +1,10 @@
-#wrapper {
+body{
+  background-color: black;
+}
+
+#wrapper{
   width: 600px;
   margin: 0 auto;
-   background-color: black;
 }
 
 #slider{
@@ -11,14 +14,14 @@
   margin: 30px auto;
 }
 
-#slider > img {
+#slider > img{
   width: 600px;
   height: 400px;
   float: left;
   display: none;do
 }
 
-a {
+a{
   padding: 5px 10px;
   background-color:  #F0F0F0;
   margin-top: 30px;
@@ -30,6 +33,6 @@ a.left{
   float: left;
 }
 
-a.right {
+a.right{
    float: right;
 }
