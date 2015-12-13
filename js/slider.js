@@ -1,4 +1,4 @@
-var sliderint = 1;
+var sliderInt = 1;
 var sliderNext = 2;
 
 $(document).ready(function() {
@@ -30,17 +30,18 @@ function startSlider() {
     sliderNext = sliderNext + 1;
   }, 3000)
   
-  function prev() {
+}
+function prev() {
     var prevSlide = sliderInt - 1;
     showSlide(prevSlide);
   }
   
-  function next() {
+function next() {
     var nextSlide = sliderInt + 1;
     showSlide(nextSlide);
   }
   
-  function showSlide(id){
+function showSlide(id){
     var count = $('#slider > img').size();
     if (id > count) {
       id = 1;      
@@ -57,4 +58,3 @@ function startSlider() {
     sliderInt = id;
     sliderNext = id + 1;
   }
-}
